@@ -11,7 +11,7 @@
 
     <mvc:annotation-driven conversion-service="conversionService" />
 
-    <context:component-scan base-package="com.tic.tac.toy.*" />
+    <context:component-scan base-package="com.tic.tac.toe.*" />
 
     <mvc:resources mapping="/resources/**" location="/resources/" />
 
@@ -23,7 +23,7 @@
     <bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
         <property name="converters">
             <set>
-                <bean class="com.tic.tac.toy.convertor.GameConvertor"/>
+                <bean class="com.tic.tac.toe.convertor.GameConvertor"/>
             </set>
         </property>
     </bean>

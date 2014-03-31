@@ -1,7 +1,7 @@
-package com.tic.tac.toy.convertor;
+package com.tic.tac.toe.convertor;
 
-import com.tic.tac.toy.model.Game;
-import com.tic.tac.toy.service.GameService;
+import com.tic.tac.toe.model.Game;
+import com.tic.tac.toe.service.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;
 

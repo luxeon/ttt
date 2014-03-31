@@ -1,8 +1,8 @@
-package com.tic.tac.toy.service;
+package com.tic.tac.toe.service;
 
-import com.tic.tac.toy.exception.StepHasBeenTakenException;
-import com.tic.tac.toy.model.Game;
-import com.tic.tac.toy.model.Step;
+import com.tic.tac.toe.exception.StepHasBeenTakenException;
+import com.tic.tac.toe.model.Game;
+import com.tic.tac.toe.model.Step;
 
 import java.util.List;
 

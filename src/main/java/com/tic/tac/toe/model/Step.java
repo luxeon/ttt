@@ -1,7 +1,7 @@
-package com.tic.tac.toy.model;
+package com.tic.tac.toe.model;
 
-import com.tic.tac.toy.Constants;
-import com.tic.tac.toy.Sign;
+import com.tic.tac.toe.Constants;
+import com.tic.tac.toe.Sign;
 
 import javax.persistence.*;
 import javax.validation.constraints.Max;

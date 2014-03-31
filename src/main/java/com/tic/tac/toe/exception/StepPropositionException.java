@@ -1,4 +1,4 @@
-package com.tic.tac.toy.exception;
+package com.tic.tac.toe.exception;
 
 public class StepPropositionException extends Exception {
 }

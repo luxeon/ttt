@@ -1,12 +1,12 @@
-package com.tic.tac.toy.service;
+package com.tic.tac.toe.service;
 
-import com.tic.tac.toy.GameStatus;
-import com.tic.tac.toy.exception.StepHasBeenTakenException;
-import com.tic.tac.toy.model.Game;
-import com.tic.tac.toy.model.Step;
-import com.tic.tac.toy.repository.GameRepository;
-import com.tic.tac.toy.repository.StepRepository;
-import com.tic.tac.toy.utils.WinnerFinder;
+import com.tic.tac.toe.GameStatus;
+import com.tic.tac.toe.exception.StepHasBeenTakenException;
+import com.tic.tac.toe.model.Game;
+import com.tic.tac.toe.model.Step;
+import com.tic.tac.toe.repository.GameRepository;
+import com.tic.tac.toe.repository.StepRepository;
+import com.tic.tac.toe.utils.WinnerFinder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

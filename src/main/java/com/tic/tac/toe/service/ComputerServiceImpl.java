@@ -1,9 +1,9 @@
-package com.tic.tac.toy.service;
+package com.tic.tac.toe.service;
 
-import com.tic.tac.toy.Constants;
-import com.tic.tac.toy.exception.StepPropositionException;
-import com.tic.tac.toy.model.Game;
-import com.tic.tac.toy.model.Step;
+import com.tic.tac.toe.Constants;
+import com.tic.tac.toe.exception.StepPropositionException;
+import com.tic.tac.toe.model.Game;
+import com.tic.tac.toe.model.Step;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

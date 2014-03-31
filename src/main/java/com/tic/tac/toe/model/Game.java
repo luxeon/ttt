@@ -1,6 +1,6 @@
-package com.tic.tac.toy.model;
+package com.tic.tac.toe.model;
 
-import com.tic.tac.toy.GameStatus;
+import com.tic.tac.toe.GameStatus;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;

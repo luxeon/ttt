@@ -1,8 +1,8 @@
-package com.tic.tac.toy.controller;
+package com.tic.tac.toe.controller;
 
-import com.tic.tac.toy.GameStatus;
-import com.tic.tac.toy.model.Game;
-import com.tic.tac.toy.service.GameService;
+import com.tic.tac.toe.GameStatus;
+import com.tic.tac.toe.model.Game;
+import com.tic.tac.toe.service.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;

@@ -1,4 +1,4 @@
-package com.tic.tac.toy;
+package com.tic.tac.toe;
 
 public enum Sign {
 

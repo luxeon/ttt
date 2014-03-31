@@ -1,10 +1,10 @@
-package com.tic.tac.toy.utils;
+package com.tic.tac.toe.utils;
 
-import com.tic.tac.toy.Constants;
-import com.tic.tac.toy.GameStatus;
-import com.tic.tac.toy.Sign;
-import com.tic.tac.toy.model.Game;
-import com.tic.tac.toy.model.Step;
+import com.tic.tac.toe.Constants;
+import com.tic.tac.toe.GameStatus;
+import com.tic.tac.toe.Sign;
+import com.tic.tac.toe.model.Game;
+import com.tic.tac.toe.model.Step;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
