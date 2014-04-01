@@ -2,14 +2,18 @@ package com.tic.tac.toe.model;
 
 import com.tic.tac.toe.Constants;
 import com.tic.tac.toe.Sign;
+import org.codehaus.jackson.annotate.JsonBackReference;
 
 import javax.persistence.*;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 
 @Entity
-public class Step {
+public class Step implements Serializable{
+
+    private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue
@@ -17,6 +21,7 @@ public class Step {
 
     @NotNull
     @ManyToOne
+    @JsonBackReference
     private Game game;
 
     @NotNull
@@ -24,11 +29,11 @@ public class Step {
     private Sign sign;
 
     @Min(Constants.GAME_FIRST_ROW)
-    @Max(Constants.GAME_TOTAL_ROWS)
+    @Max(Constants.GAME_TOTAL_ROWS - 1)
     private int row;
 
     @Min(Constants.GAME_FIRST_ROW)
-    @Max(Constants.GAME_TOTAL_ROWS)
+    @Max(Constants.GAME_TOTAL_ROWS - 1)
     private int col;
 
     public Step(){}

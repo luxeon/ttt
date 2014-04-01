@@ -23,7 +23,7 @@
     <bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
         <property name="converters">
             <set>
-                <bean class="com.tic.tac.toe.convertor.GameConvertor"/>
+                <bean class="com.tic.tac.toe.convertor.GameConverter"/>
             </set>
         </property>
     </bean>

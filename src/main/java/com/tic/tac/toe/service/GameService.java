@@ -11,7 +11,7 @@ public interface GameService {
     Game findOne(Long id);
     List<Game> findAll();
     Game save(Game game);
-    Step makeStep(Game game, Step step) throws StepHasBeenTakenException;
+    void makeStep(Game game, Step step) throws StepHasBeenTakenException;
     boolean isStepPossible(Game game, int row, int col);
     boolean isGameFinished(Game game);
 }

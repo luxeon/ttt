@@ -6,7 +6,6 @@ import com.tic.tac.toe.model.Game;
 import com.tic.tac.toe.model.Step;
 import com.tic.tac.toe.repository.GameRepository;
 import com.tic.tac.toe.repository.StepRepository;
-import com.tic.tac.toe.utils.WinnerFinder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -40,12 +39,13 @@ public class GameServiceImpl implements GameService {
     }
 
     @Override
-    public Step makeStep(Game game, Step step) throws StepHasBeenTakenException {
+    public void makeStep(Game game, Step step) throws StepHasBeenTakenException {
         if(!isStepPossible(game, step.getRow(), step.getCol())) {
             throw new StepHasBeenTakenException();
         }
         step.setGame(game);
-        return stepRepository.save(step);
+        game.getSteps().add(step);
+        gameRepository.save(game);
     }
 
     @Override

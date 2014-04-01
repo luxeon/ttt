@@ -1,4 +1,4 @@
-package com.tic.tac.toe.utils;
+package com.tic.tac.toe.service;
 
 import com.tic.tac.toe.GameStatus;
 import com.tic.tac.toe.model.Game;

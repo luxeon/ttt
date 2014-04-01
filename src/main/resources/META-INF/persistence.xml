@@ -4,12 +4,12 @@
              version="2.0">
     <persistence-unit name="jpaUnitHibernateMySql">
         <properties>
-            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <!--<property name="hibernate.hbm2ddl.auto" value="create"/>-->
             <property name="hibernate.archive.autodetection" value="class, hbm"/>
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
             <property name="hibernate.connection.username" value="root"/>
             <property name="hibernate.connection.password" value="root"/>
-            <property name="hibernate.connection.url" value="jdbc:mysql://localhost/tikTakToy"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost/tikTakToe"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
 		</properties>
     </persistence-unit>
